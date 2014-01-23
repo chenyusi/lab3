@@ -41,9 +41,6 @@ function updateProject(e) {
     // read the new description
 	var descript = $('#description').val();
 	$(projectid + " .project-description ").text(descript);
-	$(".project").click(function(e) {
-		$(".project p").toggleClass("active");
-	});
 }
 
 
@@ -63,11 +60,11 @@ function projectClick(e){
 		containingProject.append("<div class= 'project-description'><p>Descrition of the project.</p></div>");
 	}
 	else {
-		$(".project p").toggleClass("active");
+		//$("project-description").toggleClass("active");
 	}
 
 	//toggle project description
-	$(".project p").toggleClass("active");
+	$(containingProject).find(".project-description").toggleClass("active");
 
 	
 }

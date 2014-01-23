@@ -45,11 +45,11 @@ body {
      text-align: center;
 }
 
-.project-description p.active{
+.project-description.active{
      color: #1f6ddd;
 }
 
-
-#description p.active{
+.containingProject p.active{
      color: #1f6ddd;
 }
+
